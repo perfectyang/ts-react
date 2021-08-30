@@ -4,7 +4,6 @@ import { IInputs } from '../typing'
 const Input:FC<IInputs> = ({value, addTodo}):ReactElement => {
     const ref = useRef<HTMLInputElement>(null)
     // console.log(addTodo)
-    
     const handleEnter = () => {
         const value = ref.current!.value
         if (!value) return
